@@ -1,0 +1,171 @@
+QUESTÃO 1
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo Vitae</title>
+</head>
+<body>
+  <h1>Currículo</h1>
+  <section class="informacoes">
+    <h2>Informações</h2>
+    <p>
+      Nome: Narciso B. Neto
+      E-mail: nbn10@outlook.com.com
+      Telefone: (48) 99999-9999
+      LinkedIn: https://www.linkedin.com/in/nbn10/
+    </p>
+  </section>
+  <section class="experiencias">
+    <h2>Experiências</h2>
+    <ul>
+      <li>
+        Desenvolvedor Full Stack
+        <strong>Empresa X</strong>
+        <strong>2021 - Presente</strong>
+        <ul>
+          <li>Desenvolvimento de aplicações Dart/Flutter</li>
+          <li>Manutenção de hardware</li>
+        </ul>
+      </li>
+      <li>
+        Analista de redes de TI
+        <strong>Tec+</strong>
+        <strong>2020 - 2021</strong>
+        <ul>
+          <li>Análise e desenvolvimento de redes de TI</li>
+          <li>Gerenciamento de redes</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section class="cursos">
+    <h2>Cursos e capacitações</h2>
+    <ol>
+      <li>
+        <strong>Curso de IA Udemy</strong>
+        <strong>Inovação em IA</strong>
+        <strong>2022</strong>
+      </li>
+      <li>
+        <strong>Curso de Dart</strong>
+        <strong>Udemy</strong>
+        <strong>2021</strong>
+      </li>
+      <li>
+        <strong>Curso de Java</strong>
+        <strong>Alura</strong>
+        <strong>2020</strong>
+      </li>
+    </ol>
+  </section>
+</body>
+</html>
+
+
+
+Questão 2
+
+// Declaração das variáveis
+const nome = prompt("Qual é o seu nome?");
+const idade = prompt("Qual é a sua idade?");
+const profissao = prompt("Qual é a sua profissão?");
+const objetivo = prompt("Qual é o seu objetivo no Floripa Mais Tec?");
+
+// Exibição da mensagem no console
+console.log(`Meu nome é ${nome}, tenho ${idade} anos e minha profissão é ${profissao}. O meu objetivo no Floripa Mais Tec é ${objetivo}.`);
+
+
+Exemplo de execução:
+
+Qual é o seu nome? Bard
+Qual é a sua idade? 2
+Qual é a sua profissão? Modelo de linguagem
+Qual é o seu objetivo no Floripa Mais Tec? Aprender sobre programação e contribuir para o desenvolvimento da tecnologia no Brasil.
+
+Meu nome é Bard, tenho 2 anos e minha profissão é Modelo de linguagem. O meu objetivo no Floripa Mais Tec é Aprender sobre programação e contribuir para o desenvolvimento da tecnologia no Brasil.
+
+Explicação:
+
+A variável nome é do tipo string para armazenar o nome do usuário.
+
+A variável idade é do tipo number para armazenar a idade do usuário.
+
+A variável profissao é do tipo string para armazenar a profissão do usuário.
+
+A variável objetivo é do tipo string para armazenar o objetivo do usuário no Floripa Mais Tec.
+
+O prompt é utilizado para solicitar ao usuário as informações necessárias para preencher as variáveis.
+
+A mensagem é exibida no console usando o método console.log().
+
+
+
+
+Questão 3
+
+
+// Declaração da variável
+const idade_cliente = 21;
+
+// Bloco if
+if (idade_cliente >= 18) {
+  console.log("cliente é maior de idade");
+}
+
+
+A variável idade_cliente é do tipo number para armazenar a idade do cliente.
+
+O bloco if verifica se o valor da variável idade_cliente é maior ou igual a 18. Se for, o bloco é executado e a mensagem "cliente é maior de idade" é impressa no console.
+
+Exemplo de execução:
+
+cliente é maior de idade
+
+
+
+
+Questão 4
+
+
+
+JavaScript
+// Declaração das variáveis
+const clima = "ensolarado";
+
+// Bloco if
+if (clima === "ensolarado") {
+  console.log("O tempo está lindo!");
+} else {
+  console.log("O tempo está nublado, leve um guarda-chuva");
+}
+Use o código com cuidado. Saiba mais
+Exemplo de execução:
+
+O tempo está lindo!
+
+
+Outro exemplo
+
+
+
+// Declaração das variáveis
+const usuario = {
+  nome: "João",
+  email: "joao@example.com",
+  permissao: true,
+};
+
+// Bloco if
+if (usuario.permissao) {
+  console.log("O usuário tem permissão para acessar o recurso");
+} else {
+  console.log("O usuário não tem permissão para acessar o recurso");
+}
+Use o código com cuidado. Saiba mais
+Exemplo de execução:
+
+O usuário tem permissão para acessar o recurso
+
+

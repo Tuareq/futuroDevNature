@@ -1,0 +1,76 @@
+1-) 
+
+Imagine um sistema onde o usuário precisa selecionar uma opção de 1 a 4 para executar uma ação e, caso digite qualquer outra coisa, o sistema, por padrão, deve mostrar em tela “opção inválida”. Crie uma estrutura de switch que avalie uma variável opcao_usuario e imprima “Opção selecionada: X” para cada uma das opções (de 1 a 4) e “Opção inválida” como caso padrão. Utilize o console.log para imprimir em tela.
+
+Aqui está um exemplo de código JavaScript que usa uma estrutura switch para avaliar a variável opcao_usuario:
+
+JavaScript
+Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
+
+let opcao_usuario = 1; // Substitua este valor para testar diferentes opções
+
+switch(opcao_usuario) {
+    case 1:
+        console.log("Opção selecionada: 1");
+        break;
+    case 2:
+        console.log("Opção selecionada: 2");
+        break;
+    case 3:
+        console.log("Opção selecionada: 3");
+        break;
+    case 4:
+        console.log("Opção selecionada: 4");
+        break;
+    default:
+        console.log("Opção inválida");
+}
+Este código irá imprimir “Opção selecionada: X” para cada uma das opções de 1 a 4, e “Opção inválida” para qualquer outro valor. Você pode substituir o valor de opcao_usuario para testar diferentes opções. 
+
+
+
+3-)
+
+
+Em um determinado sistema, exista um elemento HTML com a classe “title”, escreva a regra CSS para que este elemento seja impresso com as seguintes características:
+
+Fonte 26px Arial
+Cor da fonte #999999
+Texto em uppercase
+Texto centralizado
+
+regra CSS 
+
+.title {
+    font-family: Arial;
+    font-size: 26px;
+    color: #999999;
+    text-transform: uppercase;
+    text-align: center;
+}
+Esta regra CSS irá selecionar todos os elementos HTML com a classe “title” e aplicar as características desejadas
+
+
+
+4-)
+
+Imaginando que, em um determinado sistema, exista um elemento HTML do tipo div com uma classe “card”, escreva a regra CSS para que este elemento seja impresso com as seguintes características:
+
+Borda de 1px, sólida, e de cor “rgba(0, 0, 0, 0.1)”
+Com uma sombra com o valor de “0 3px 3px rgba(0, 0, 0, 0.1)”
+Com um preenchimento de 8px em todos os 4 lados
+Com a borda arredondada em 3px
+Com a cor de fundo branca
+
+
+
+regra CSS 
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    border-radius: 3px;
+    background-color: white;
+}
+Esta regra CSS irá selecionar todos os elementos HTML do tipo div com a classe “card” e aplicar as características desejadas

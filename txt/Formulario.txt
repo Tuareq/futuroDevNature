@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h2>Lista ordenada</h2>
+
+    <ol>
+      // Lista ordenada
+      <li>Chá</li>
+      <li>Café</li>
+      <li>Pão</li>
+      <li>Manteiga</li>
+    </ol>
+
+    <ul>
+      // lista nao ordenada
+      <li>Chá</li>
+      <li>Café</li>
+      <li>Pão</li>
+      <li>Manteiga</li>
+
+      <div>
+        <h2>Aluno: Narciso</h2>
+
+        <p>Curso: FMT - Trilha Dev</p>
+        <p>Curso: Email: nbn@gm.com</p>
+
+        <form>
+          <label for="nome">Nome:</label><br />
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome
+          "
+          /><br />
+          <label for="sobrenome">Sobrenome:</label><br />
+          <input
+            type="text"
+            id="sobrenome"
+            name="sobrenome"
+            placeholder="Digite seu sobrenome "
+          /><br />
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </ul>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FMT - Semana 2 - Aula 3</title>
+  </head>
+  <body>
+    <!--<h2>Lista ordenada</h2>
+
+    <ol>
+      <li>Chá</li>
+      <li>Café</li>
+      <li>Leite</li>
+    </ol>
+
+    <ul>
+      <li>Chá</li>
+      <li>Café</li>
+      <li>Leite</li>
+    </ul>-->
+
+    <!-- <div>
+      <h2>Aluno: Bruno Costa</h2>
+      <p>Curso: FMT - Trilha Dev</p>
+      <p><span>Email:</span> bruno@email.com</p>
+    </div>
+    <div>
+      Site criado em 31/10/2023
+    </div> -->
+
+    <form>
+      <label for="nome">Nome:</label>
+      <input
+        id="nome"
+        value="Bruno"
+        name="nome"
+        placeholder="Digite seu nome"
+        type="text"
+      />
+      <label for="idade">Idade:</label>
+      <input
+        id="idade"
+        placeholder="Digite sua idade"
+        type="number"
+        min="1"
+        max="90"
+      />
+      <br />
+      <label for="senha">Senha:</label>
+      <input
+        id="senha"
+        placeholder="Digite sua senha"
+        value="bruno123"
+        type="password"
+      />
+      <br />
+      <label for="data">Data:</label>
+      <input
+        id="data"
+        placeholder="Escolha uma data"
+        value="bruno123"
+        type="datetime-local"
+      />
+      <br />
+      <label for="cor">Cor:</label>
+      <input id="cor" placeholder="Escolha uma cor" type="color" />
+      <br />
+      <label for="sobrenome">Sobrenome:</label>
+      <input
+        type="text"
+        id="sobrenome"
+        placeholder="Digite seu sobrenome"
+        required
+        minlength="4"
+        maxlength="20"
+      />
+      <!-- <input type="submit" value="Finalizar cadastro" /> -->
+      <button type="submit">Finalizar cadastro</button>
+    </form>
+  </body>
+</html>
+

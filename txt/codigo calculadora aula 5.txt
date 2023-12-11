@@ -1,0 +1,187 @@
+BING IA
+
+
+<html>
+<head>
+    <title>Minha Calculadora</title>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 18px;
+            background-color: #FAF9F6;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 640px;
+            background-color: #FFFFFF;
+            border: 1px solid #ECE7DD;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        input, select {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Minha Calculadora</h1>
+        <p>Este é um projeto que eu fiz para aprender HTML e JavaScript. Ele permite fazer cálculos simples usando dois números e uma operação matemática.</p>
+        <ol>
+            <li>Digite os dois números nos campos abaixo.</li>
+            <li>Escolha a operação que você quer fazer no menu suspenso.</li>
+            <li>Clique no botão "Calcular" para ver o resultado.</li>
+        </ol>
+        <input type="number" id="num1" class="input" placeholder="Primeiro número">
+        <input type="number" id="num2" class="input" placeholder="Segundo número">
+        <select id="op" class="input">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button id="calc" class="button" onclick="calcular()">Calcular</button>
+        <p id="res">O resultado da operação é:</p>
+
+        <script>
+            function calcular() {
+                var num1 = Number(document.getElementById("num1").value);
+                var num2 = Number(document.getElementById("num2").value);
+                var op = document.getElementById("op").value;
+                var resultado;
+                if (op == "+") {
+                    resultado = num1 + num2;
+                } else if (op == "-") {
+                    resultado = num1 - num2;
+                } else if (op == "*") {
+                    resultado = num1 * num2;
+                } else if (op == "/") {
+                    resultado = num1 / num2;
+                }
+                document.getElementById("res").innerHTML = "O resultado da operação é: " + resultado;
+            }
+        </script>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+
+CHAT GPT
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Calculadora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAF9F6;
+        }
+
+        .calculator-container {
+            max-width: 640px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border: 1px solid #ECE7DD;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .input-field {
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        select {
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #0074cc;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005aa6;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Calculadora</h1>
+    <p>Este é um projeto que eu fiz para aprender HTML e JavaScript. Ele permite fazer cálculos simples usando dois números e uma operação matemática.</p>
+    <ol>
+        <li>Digite os dois números nos campos abaixo.</li>
+        <li>Escolha a operação que você quer fazer no menu suspenso.</li>
+        <li>Clique no botão "Calcular" para ver o resultado.</li>
+    </ol>
+    <div class="calculator-container">
+        <input type="number" id="num1" class="input-field" placeholder="Primeiro número">
+        <input type="number" id="num2" class="input-field" placeholder="Segundo número">
+        <select id="op" class="input-field">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button id="calc" onclick="calcular()">Calcular</button>
+        <p id="res">O resultado da operação é:</p>
+    </div>
+
+    <script>
+        function calcular() {
+            // Pegar os valores dos inputs
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var op = document.getElementById("op").value;
+            // Fazer o cálculo de acordo com a operação escolhida
+            var resultado;
+            if (op == "+") {
+                resultado = num1 + num2;
+            } else if (op == "-") {
+                resultado = num1 - num2;
+            } else if (op == "*") {
+                resultado = num1 * num2;
+            } else if (op == "/") {
+                resultado = num1 / num2;
+            }
+            // Mostrar o resultado no parágrafo
+            document.getElementById("res").innerHTML = "O resultado da operação é: " + resultado;
+        }
+    </script>
+</body>
+</html>
