@@ -17,22 +17,22 @@ console.log(arrayNomes.join(""))
 
 // Pode usar o LET ou CONST o simbolo é colchet (lista)
 
-let notas = [5, 5, 7, 7]
-let media = 0
-let soma = 0
+//let notas = [5, 5, 7, 7]
+//let media = 0
+//let soma = 0
 
- for(let contador =0; contador < notas.length;contador++){
-    soma = soma + notas[contador]
- }
+ //for(let contador =0; contador < notas.length;contador++){
+ //   soma = soma + notas[contador]
+ // }
 
-//let soma = nota1 + nota2 + nota3 + nota4 
+ //media = soma /  notas.length;
 
- media = soma /  notas.length;
-
- if (media >= 7)  {
-   console.log("ALUNO APROVADO") 
-} else {
-       console.log("ALUNO REPROVADO")}
+ //if (media >= 7)  {
+ //  console.log("ALUNO APROVADO") 
+// } else {
+ //      console.log("ALUNO REPROVADO")}
 
 // Para executar o script CTRL + ALT + N   
-// Para tirar ou colocar o sinal de // clicar CTRL + ; ou CTRL + SHIFT + :
+// Para tirar ou colocar o sinal de // clicar CTRL + ; para tirar clicar  CTRL + ;
+
+
