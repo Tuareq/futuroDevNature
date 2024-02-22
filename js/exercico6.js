@@ -1,4 +1,4 @@
-// EXERCICIO 6 M!S05
+// EXERCICIO 6 M!S05 =====
 const prompt = require('prompt-sync')({sigint: true});
 
 // Função para validar se o valor digitado é um número
