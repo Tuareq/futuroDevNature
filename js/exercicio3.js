@@ -6,6 +6,7 @@ const numeros = [];
 
 // Loop para ler 5 números do usuário
 for (let i = 0; i < 5; i++) {
+  
   // Lê um número do usuário
   const numero = parseInt(prompt(`Digite o ${i + 1}º número: `));
 

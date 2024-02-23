@@ -14,4 +14,4 @@ numeros.push(numero);
 const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
 
 // Imprimir soma dos elementos do array
-console.log(Soma dos elementos do array: ${soma});
+console.log("Soma dos elementos do array:", soma);
