@@ -6,7 +6,7 @@ let numeros = [];
 
 // Loop para solicitar dos 5 números do usuário
 for (let i = 0; i < 5; i++) {
-let numero = parseInt(prompt(Digite o número ${i + 1}: ));
+let numero = parseInt(prompt('Digite o número ${i + 1}: '));
 numeros.push(numero);
 }
 
