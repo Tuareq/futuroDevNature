@@ -8,7 +8,7 @@ function verificarNumeroPar(numero) {
     });
   }
   
-  // Exemplo de uso
+  
   verificarNumeroPar(10)
     .then((mensagem) => {
       console.log(mensagem); // "Número validado é par"
