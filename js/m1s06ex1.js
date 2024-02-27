@@ -7,8 +7,7 @@ function verificarNumeroPar(numero) {
       }
     });
   }
-  
-  
+    
   verificarNumeroPar(10)
     .then((mensagem) => {
       console.log(mensagem); // "Número validado é par"
