@@ -3,7 +3,7 @@ function verificarNumeroPar(numero) {
       if (numero % 2 === 0) {
         resolve('Número validado é par');
       } else {
-        reject('Error: número informado é ímpar');
+        reject('Erro: número informado é ímpar');
       }
     });
   }
@@ -14,5 +14,5 @@ function verificarNumeroPar(numero) {
       console.log(mensagem); // "Número validado é par"
     })
     .catch((mensagem) => {
-      console.log(mensagem); // "Error: número informado é ímpar"
+      console.log(mensagem); // "Erro: número informado é ímpar"
     });
