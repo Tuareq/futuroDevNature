@@ -18,6 +18,8 @@
                 idade: idade,
                 email: email
             };
+
+            localStorage.setItem('user', JSON.stringify(usuario));
         }
 
         function exibirInformacoes(informacoes) {
