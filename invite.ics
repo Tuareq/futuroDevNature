@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/Sao_Paulo
+X-LIC-LOCATION:America/Sao_Paulo
+BEGIN:STANDARD
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0300
+TZNAME:-03
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Sao_Paulo:20240205T190000
+DTEND;TZID=America/Sao_Paulo:20240205T220000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20240504T025959Z;BYDAY=MO,WE
+DTSTAMP:20240205T191144Z
+ORGANIZER;CN=ANDREZZA DAMASCENO FINCO:mailto:andrezza.finco@sc.senai.br
+UID:5u7146resl8lkhlkmt1j1gmh2g@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=narciso_brunazzo-@estudante.sesisenai.org.br;X-NUM-GUESTS=0:mailto:
+ narciso_brunazzo-@estudante.sesisenai.org.br
+X-GOOGLE-CONFERENCE:https://meet.google.com/xju-ihbb-nvh
+X-MICROSOFT-CDO-OWNERAPPTID:1221837725
+CREATED:20240119T152547Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/xj
+ u-ihbb-nvh\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240205T191140Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:FuturoDEV [Nature] - Aula Síncrona do M1
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

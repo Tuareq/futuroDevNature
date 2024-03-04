@@ -74,3 +74,4 @@ regra CSS
     background-color: white;
 }
 Esta regra CSS irá selecionar todos os elementos HTML do tipo div com a classe “card” e aplicar as características desejadas
+ Testando commit para ver se esta subindo corretamente: !!!!!!!!!!
