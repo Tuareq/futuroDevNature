@@ -1,6 +1,5 @@
 async function getUserInfo() {
   return new Promise((resolve) => {
-    // Simulando o tempo de espera da consulta (2 segundos)
     setTimeout(() => {
       const userInfo = {
         nome: "Alice",
@@ -11,8 +10,6 @@ async function getUserInfo() {
     }, 2000);
   });
 }
-
-// Função que utiliza getUserInfo para obter as informações do usuário e exibi-las no console
 async function obterEExibirInformacoesDoUsuario() {
   try {
     const userInfo = await getUserInfo();
@@ -24,6 +21,4 @@ async function obterEExibirInformacoesDoUsuario() {
     console.error("Erro ao obter informações do usuário:", error.message);
   }
 }
-
-// Chamando a função para obter e exibir as informações do usuário
 obterEExibirInformacoesDoUsuario();
