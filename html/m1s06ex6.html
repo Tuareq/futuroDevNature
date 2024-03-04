@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buscar Endereço por CEP</title>
+  </head>
+  <body>
+    <script>
+      const cep = prompt('Digite o CEP:');
+
+      if (cep.length === 8) {
+        fetch(`https://viacep.com.br/ws/${cep}/json`)
+          .then(response => response.json())
+          .then(data => {
+            if (data.erro) {
+              throw new Error('CEP não encontrado.');
+            }
+            const endereco = `${data.logradouro}, ${
+              data.complemento || ''
+            } - ${data.bairro} - ${data.localidade}/${data.uf}`;
+            alert(endereco);
+          })
+          .catch(error => {
+            alert(error.message);
+          });
+      } else {
+        alert('CEP inválido.');
+      }
+    </script>
+  </body>
+</html>
