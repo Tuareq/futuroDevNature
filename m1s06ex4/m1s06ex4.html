@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M1S06 Ex4</title>
+
+        <script>
+        
+        function solicitarInformacoes() { 
+            var nome = prompt("Digite seu nome:"); 
+            var idade = prompt("Digite sua idade:"); 
+            var email = prompt("Digite seu email:");
+
+           
+            return {
+                nome: nome,
+                idade: idade,
+                email: email
+            };
+
+            localStorage.setItem('user', JSON.stringify(usuario));
+        }
+
+        function exibirInformacoes(informacoes) {
+           
+            var divInformacoes = document.createElement('div');
+            divInformacoes.innerHTML = `
+                <h2>Informações inseridas:</h2>
+                <p>Nome: ${informacoes.nome}</p>
+                <p>Idade: ${informacoes.idade}</p>
+                <p>Email: ${informacoes.email}</p>
+            `;
+
+          
+            document.body.appendChild(divInformacoes);
+        }
+
+        </script>
+    </head>
+    <body onload="exibirInformacoes(solicitarInformacoes())">
+       
+        <script src="./m1s06ex4.js"></script>
+     
+        <h1>Exercício 4 - Módulo 1 - Semana 6</h1>
+    </body>
+</html>

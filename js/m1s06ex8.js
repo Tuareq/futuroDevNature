@@ -31,5 +31,9 @@ document.getElementById('submit-button').addEventListener('click', function () {
   const endereco = JSON.parse(localStorage.getItem('endereco'));
   if (endereco) {
     alert(`Endereço atual:\n${endereco.logradouro}, ${endereco.complemento ? endereco.complemento : ''} - ${endereco.bairro} - ${endereco.localidade}/${endereco.uf}`);
+<<<<<<< HEAD
   }
   //final
+=======
+  }
+>>>>>>> c8c04673ab2a0ca0e1f6639f20644278e0126c5d

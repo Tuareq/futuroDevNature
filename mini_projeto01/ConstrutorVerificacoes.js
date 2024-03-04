@@ -43,7 +43,7 @@ class Produto {
       this._quantidade = quantidade;
     }
   
-    // Métodos 
+    // Métodos ...
   
     // Exemplo: Obter valor total do produto
     getValorTotal() {
@@ -61,13 +61,12 @@ class Produto {
   }
   
 
-  const produto1 = new Produto("Camiseta", 24.50, 23); // mudar valores para teste
+  const produto1 = new Produto("Camiseta", 50.00, 10);
   console.log(`Nome: ${produto1.nome}`);
   console.log(`Preço: R$ ${produto1.preco}`);
   console.log(`Quantidade: ${produto1.quantidade}`);
   
   console.log(`Valor total: R$ ${produto1.getValorTotal()}`);
   
-  produto1.diminuirQuantidade(14);         // Mudar valor para teste
+  produto1.diminuirQuantidade(5);
   console.log(`Quantidade após diminuir: ${produto1.quantidade}`);
-  
