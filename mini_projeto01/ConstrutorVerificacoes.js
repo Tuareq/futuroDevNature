@@ -43,7 +43,7 @@ class Produto {
       this._quantidade = quantidade;
     }
   
-    // Métodos 
+    // Métodos ...
   
     // Exemplo: Obter valor total do produto
     getValorTotal() {
