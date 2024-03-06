@@ -59,14 +59,13 @@ class Produto {
       }
     }
   }
-  
 
-  const produto1 = new Produto("Camiseta", 60.25, 10);
+  const produto1 = new Produto("Camiseta Azul", 60.25, 1000);
   console.log(`Nome: ${produto1.nome}`);
   console.log(`Preço: R$ ${produto1.preco}`);
   console.log(`Quantidade: ${produto1.quantidade}`);
   
   console.log(`Valor total: R$ ${produto1.getValorTotal()}`);
   
-  produto1.diminuirQuantidade(10);
+  produto1.diminuirQuantidade(11);
   console.log(`Quantidade após diminuir: ${produto1.quantidade}`);
