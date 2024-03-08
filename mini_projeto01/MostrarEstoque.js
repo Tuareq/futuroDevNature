@@ -42,15 +42,13 @@ class Produto {
       }
       this._quantidade = quantidade;
     }
-  
-    // Métodos ...
-  
-    // Exemplo: Obter valor total do produto
+
+    // Obter valor total do produto
     getValorTotal() {
       return this.preco * this.quantidade;
     }
   
-    // Exemplo: Adicionar quantidade ao produto
+    // Adicionar quantidade ao produto
     repor(quantidadeReposta) {
       if (quantidadeReposta < 0 || isNaN(quantidadeReposta)) {
         console.log('Quantidade reposta inválida');
@@ -59,7 +57,7 @@ class Produto {
       this.quantidade += quantidadeReposta;
     }
   
-    // Método para mostrar estoque
+    //  mostrar estoque
     MostrarEstoque() {
       console.log(`O produto ${this.nome} possui ${this.quantidade} unidades disponíveis`);
     }
