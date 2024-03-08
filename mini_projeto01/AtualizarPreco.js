@@ -76,5 +76,5 @@ class Produto {
   
   console.log(`Valor total: R$ ${produto1.getValorTotal()}`);
   
-  produto1.AtualizarPreco(65.50);
+  produto1.AtualizarPreco(50.02);
   console.log(`Preço atualizado: R$ ${produto1.preco}`);
