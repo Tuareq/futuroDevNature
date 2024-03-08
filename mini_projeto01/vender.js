@@ -42,10 +42,7 @@ class Produto {
       }
       this._quantidade = quantidade;
     }
-  
-    // Métodos ...
-  
-    // Exemplo: Obter valor total do produto
+      // Exemplo: Obter valor total do produto
     getValorTotal() {
       return this.preco * this.quantidade;
     }
