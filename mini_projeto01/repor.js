@@ -67,5 +67,5 @@ class Produto {
   
   console.log(`Valor total: R$ ${produto1.getValorTotal()}`);
   
-  produto1.repor(11);
+  produto1.repor(24);
   console.log(`Quantidade após repor: ${produto1.quantidade}`);
