@@ -43,8 +43,6 @@ class Produto {
       this._quantidade = quantidade;
     }
   
-    // Métodos ...
-  
     // Exemplo: Obter valor total do produto
     getValorTotal() {
       return this.preco * this.quantidade;
@@ -60,12 +58,12 @@ class Produto {
     }
   }
   
-  const produto1 = new Produto("Camiseta Azul", 60.25, 1000);
+  const produto1 = new Produto("Bota Motoquiero CAC", 180.00, 50);
   console.log(`Nome: ${produto1.nome}`);
   console.log(`Preço: R$ ${produto1.preco}`);
   console.log(`Quantidade: ${produto1.quantidade}`);
   
   console.log(`Valor total: R$ ${produto1.getValorTotal()}`);
   
-  produto1.repor(24);
+  produto1.repor(5);
   console.log(`Quantidade após repor: ${produto1.quantidade}`);
