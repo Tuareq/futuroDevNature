@@ -57,12 +57,12 @@ class Produto {
     }
   }
   
-  const produto1 = new Produto("Camiseta Azul", 32.25, 100);
+  const produto1 = new Produto("Calça 502", 89.43, 90);
   console.log(`Nome: ${produto1.nome}`);
   console.log(`Preço: R$ ${produto1.preco}`);
   console.log(`Quantidade: ${produto1.quantidade}`);
   
   console.log(`Valor total: R$ ${produto1.getValorTotal()}`);
   
-  produto1.vender(11);
+  produto1.vender(15);
   console.log(`Quantidade após vender: ${produto1.quantidade}`);
