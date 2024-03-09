@@ -42,9 +42,7 @@ class Produto {
       }
       this._quantidade = quantidade;
     }
-  
-    // Métodos ...
-  
+
     // Exemplo: Obter valor total do produto
     getValorTotal() {
       return this.preco * this.quantidade;
@@ -69,54 +67,51 @@ class Produto {
     }
   }
   
-  // Classe Pessoa
-  class Pessoa {
-    constructor(nome, idade, profissao) {
-      this.nome = nome;
-      this.idade = idade;
-      this.profissao = profissao;
-    }
-  
-    // Getters
-    get nome() {
-      return this._nome;
-    }
-  
-    get idade() {
-      return this._idade;
-    }
-  
-    get profissao() {
-      return this._profissao;
-    }
-  
-    // Setters
-    set nome(nome) {
-      if (!nome || typeof nome !== 'string') {
-        console.log('Nome inválido');
-        return;
-      }
-      this._nome = nome;
-    }
-  
-    set idade(idade) {
-      if (idade < 0 || isNaN(idade)) {
-        console.log('Idade inválida');
-        return;
-      }
-      this._idade = idade;
-    }
-  
-    set profissao(profissao) {
-      if (!profissao || typeof profissao !== 'string') {
-        console.log('Profissão inválida');
-        return;
-      }
-      this._profissao = profissao;
-    }
+// Classe Pessoa
+class Pessoa {
+  constructor(nome, idade, profissao) {
+    this.nome = nome;
+    this.idade = idade;
+    this.profissao = profissao;
   }
-  
-  const pessoa1 = new Pessoa("Narciso B. Neto", 65, "Desenvolvedor Web FULLLLLLLLLL");
-  console.log(`Nome: ${pessoa1.nome}`);
-  console.log(`Idade: ${pessoa1.idade}`);
-  console.log(`Profissão: ${pessoa1.profissao}`);
+
+  // Getters
+  get nome() {
+    return this.nome;
+  }
+
+  get idade() {
+    return this.idade;
+  }
+
+  get profissao() {
+    return this.profissao;
+  }
+
+  // Setters
+  set nome(nome) {
+    if (!nome || typeof nome !== 'string') {
+      throw new Error('Nome inválido');
+    }
+    this.nome = nome;
+  }
+
+  set idade(idade) {
+    if (idade < 0 || isNaN(idade)) {
+      throw new Error('Idade inválida');
+    }
+    this.idade = idade;
+  }
+
+  set profissao(profissao) {
+    if (!profissao || typeof profissao !== 'string') {
+      throw new Error('Profissão inválida');
+    }
+    this.profissao = profissao;
+  }
+}
+
+const pessoa1 = new Pessoa("Narciso B. Neto", 65, "Desenvolvedor Web FULLLLLLLLLL");
+console.log(`Nome: ${pessoa1.nome}`);
+console.log(`Idade: ${pessoa1.idade}`);
+console.log(`Profissão: ${pessoa1.profissao}`);
