@@ -42,9 +42,7 @@ class Produto {
       }
       this._quantidade = quantidade;
     }
-  
-    // Métodos ...
-  
+
     // Exemplo: Obter valor total do produto
     getValorTotal() {
       return this.preco * this.quantidade;
@@ -69,12 +67,12 @@ class Produto {
     }
   }
   
-  const produto1 = new Produto("Camiseta Azul", 60.25, 1000);
+  const produto1 = new Produto("Calça jeans Trad", 98.50, 350);
   console.log(`Nome: ${produto1.nome}`);
   console.log(`Preço: R$ ${produto1.preco}`);
   console.log(`Quantidade: ${produto1.quantidade}`);
   
   console.log(`Valor total: R$ ${produto1.getValorTotal()}`);
   
-  produto1.AtualizarPreco(50.02);
+  produto1.AtualizarPreco(110.00);
   console.log(`Preço atualizado: R$ ${produto1.preco}`);
