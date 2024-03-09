@@ -63,14 +63,14 @@ class Produto {
     }
   }
   
-  const produto1 = new Produto("Camisa Amarela", 71.56, 900);
+  const produto1 = new Produto("Camisa Amarela", 71.56, 1100);
   console.log(`Nome: ${produto1.nome}`);
   console.log(`Preço: R$ ${produto1.preco}`);
   console.log(`Quantidade: ${produto1.quantidade}`);
   
   console.log(`Valor total: R$ ${produto1.getValorTotal()}`);
   
-  produto1.repor(11);
+  produto1.repor(26);
   console.log(`Quantidade após repor: ${produto1.quantidade}`);
   
   produto1.MostrarEstoque();
