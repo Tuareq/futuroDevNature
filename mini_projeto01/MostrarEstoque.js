@@ -63,7 +63,7 @@ class Produto {
     }
   }
   
-  const produto1 = new Produto("Camisa Amarela", 71.56, 1100);
+  const produto1 = new Produto("Caneta Bic Azul", 2.56, 1100);
   console.log(`Nome: ${produto1.nome}`);
   console.log(`Preço: R$ ${produto1.preco}`);
   console.log(`Quantidade: ${produto1.quantidade}`);
