@@ -47,6 +47,16 @@ class Produto {
     getValorTotal() {
       return this.preco * this.quantidade;
     }
+
+     // Exemplo: Diminuir a quantidade do produto vendido
+     vender(quantidadeVendida) {
+      if (quantidadeVendida > this.quantidade) {
+        console.log('Estoque insuficiente');
+      } else {
+        this.quantidade -= quantidadeVendida;
+      }
+    }
+  
   
     // Adicionar quantidade ao produto
     repor(quantidadeReposta) {
@@ -63,14 +73,14 @@ class Produto {
     }
   }
   
-  const produto1 = new Produto("Caneta Bic Azul", 2.56, 432);
+  const produto1 = new Produto("Caneta Bic Azul", 2.56, 235);
   console.log(`Nome: ${produto1.nome}`);
   console.log(`Preço: R$ ${produto1.preco}`);
   console.log(`Quantidade: ${produto1.quantidade}`);
   
   console.log(`Valor total: R$ ${produto1.getValorTotal()}`);
   
-  produto1.repor(10);
+  produto1.repor(40);
   console.log(`Quantidade após repor: ${produto1.quantidade}`);
   
   produto1.MostrarEstoque();
