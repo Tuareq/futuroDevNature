@@ -9,6 +9,9 @@ app.get("/", function(req, res){
 app.get("/sobre", function(req, res){
     res.send("Olá sobre ta certo")
 }) 
+app.get("/contato", function(req, res){
+    res.send("Quem é este contato?")
+}) 
 app.get("/sobre:nome", function(req, res){
     res.send("O seu nome é:")
 }) 
