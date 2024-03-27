@@ -1,6 +1,14 @@
 const express = require("express");
 const app = express();
 
+//função middleware express.static() para servir arquivos do diretório "public".
+app.use(express.static('public'));  
+
+// iniciando o servidor chamando o método listen():
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
+
 const requestLogger = (req, res, next) => {
   const { method, url } = req;
   const timestamp = new Date().toISOString();
