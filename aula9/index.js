@@ -6,7 +6,7 @@ app.use(express.static('public'));
 
 // iniciando o servidor chamando o método listen():
 app.listen(3000, () => {
-  console.log('Server listening on port 3000');
+  console.log('Servidor ligado na porta 3000');
 });
 
 const requestLogger = (req, res, next) => {
@@ -35,8 +35,24 @@ app.get("/ola", function(req, res){
 });
 
 app.get("/ola/:nome/:idade", function(req, res){
+  let nome = req.params.nome
     res.send("Ola" + nome + ", tudo bem?")
 });
+
+app.get("/busca", (req, res) => {
+  // let parametro = req.query.parametro
+
+  const { parametro } = req.query
+
+  // Verificar se o parâmetro "parametro" está presente!
+  if(!parametro) {
+      return res.status(400).json({
+          error: "Parametros da Query estão faltando: parametro"
+      })
+  }
+
+  res.json({ message: `Você pesquisou por: ${parametro}`})
+})
 
 app.get('/product/:id', (req, res) => {
     const productId = req.params.id;
