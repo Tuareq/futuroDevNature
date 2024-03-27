@@ -30,14 +30,12 @@ app.get("/contato", function(req, res){
     res.send("Quem é este contato?")
 });
 
-app.get("/sobre:nome", function(req, res){
-    res.send("O seu nome é:")
+app.get("/ola", function(req, res){
+  res.send("Olá tudo bem com você")
 });
 
-app.get("/ola/:nome", function(req, res) {
-    const nome = req.params.nome;
-
-    res.send(`Bem vindo ${nome}`);
+app.get("/ola/:nome/:idade", function(req, res){
+    res.send("Ola" + nome + ", tudo bem?")
 });
 
 app.get('/product/:id', (req, res) => {
