@@ -17,8 +17,7 @@ app.get("/ola/:nome", function(req, res) {
 
     res.send("Bem vindo " + nome)
 })
-
+// Servidro padrao é a porta 3000
 app.listen(3000, function(){
     console.log("Minha aplicação esta no ar!")
 }); 
-// padrao é a porta 3000
