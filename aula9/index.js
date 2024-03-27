@@ -19,7 +19,7 @@ const requestLogger = (req, res, next) => {
 app.use(requestLogger);
 
 app.get("/", function(req, res){
-    res.send("Olá Mundo")
+    res.sendFile(__dirname + "/public/index.html")
 });
 
 app.get("/sobre", function(req, res){
