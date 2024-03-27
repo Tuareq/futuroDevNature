@@ -32,6 +32,21 @@ app.get("/ola/:nome", function(req, res) {
     res.send(`Bem vindo ${nome}`);
 });
 
+app.get('/product/:id', (req, res) => {
+    const productId = req.params.id;
+  
+    if (productId === '1') {
+      res.send('Você está vendo o produto 1 - Smartphone de última geração');
+    } else if (productId === '2') {
+      res.send('Você está vendo o produto 2 - Notebook super leve e potente');
+    } else if (productId === '3') {
+      res.send('Você está vendo o produto 3 - Smart TV 4K gigante');
+    } else {
+      res.send('Produto não encontrado');
+    }
+  });
+
 app.listen(3000, function(){
     console.log("Minha aplicação esta no ar!");
 });
+
