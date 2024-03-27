@@ -54,7 +54,7 @@ app.get('/product/:id', (req, res) => {
     }
   });
 
-app.listen(3000, function(){
-    console.log("Minha aplicação esta no ar!");
-});
+// app.listen(3000, function(){
+// console.log("Minha aplicação esta no ar!");
+// });
 
