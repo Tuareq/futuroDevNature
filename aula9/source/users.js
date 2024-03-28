@@ -13,7 +13,7 @@ app.post('/users', (req, res) => {
     const userId = parseInt(req.params.id);
     const user = users.find(u => u.id === userId);
     if (!user) {
-      return res.status(404).json({ message: 'User not found' });
+      return res.status(404).json({ message: 'Usuario não existe' });
     }
     res.json(user);
   });
@@ -23,7 +23,7 @@ app.post('/users', (req, res) => {
     const updatedUser = req.body;
     const index = users.findIndex(u => u.id === userId);
     if (index === -1) {
-      return res.status(404).json({ message: 'User not found' });
+      return res.status(404).json({ message: 'Usuario não existe' });
     }
     users[index] = updatedUser;
     res.json(updatedUser);
@@ -33,8 +33,8 @@ app.post('/users', (req, res) => {
     const userId = parseInt(req.params.id);
     const index = users.findIndex(u => u.id === userId);
     if (index === -1) {
-      return res.status(404).json({ message: 'User not found' });
+      return res.status(404).json({ message: 'Usuario não existe' });
     }
     users.splice(index, 1);
-    res.json({ message: 'User deleted' });
+    res.json({ message: 'Usuario destruido' });
   });
