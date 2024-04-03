@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 8000;
 
 app.use(express.json());
 
@@ -73,9 +73,9 @@ app.get('/products', (req, res) => {
 
   // Middlewares - middleware para logar informações de cada chamada realizada
 
-  app.use((req, res, next) => {
-    console.log(`Método:
+  //app.use((req, res, next) => {
+  //  console.log(`Metodo:
 
-    
+
 
 
