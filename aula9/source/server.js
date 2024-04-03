@@ -69,7 +69,7 @@ app.get('/products', (req, res) => {
   });
 
   //  testar as suas rotas usando o Postman. Certifique-se de enviar as requisições 
-  // para o endereço http://localhost:3000, usando os métodos HTTP corretos (POST, GET, PUT, DELETE).
+  // para o endereço http://localhost:8000, usando os métodos HTTP corretos (POST, GET, PUT, DELETE).
 
   // Middlewares - middleware para logar informações de cada chamada realizada
 
