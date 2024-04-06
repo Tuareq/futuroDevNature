@@ -72,7 +72,7 @@ app.get('/tasks', (req, res) => {
     const { title, description, dueDate, completed } = req.body;
   
     if (!title ||!description ||!dueDate || completed === undefined) {
-      return res.status(400).send({ error: 'Title, description, dueDate, and completed are required.' });
+      return res.status(400).send({ error: 'Título, descrição, data de vencimento e preenchimento são obrigatórios' });
     }
   
     next();
