@@ -15,7 +15,7 @@ app.post('/tasks', (req, res) => {
   const { title, description, dueDate } = req.body;
 
   if (!title ||!description ||!dueDate) {
-    return res.status(400).send({ error: 'Title, description, and due date are required.' });
+    return res.status(400).send({ error: 'Título, descrição e data de vencimento são obrigatórios.' });
   }
 
   const newTask = { id: Date.now(), title, description, dueDate, completed: false };
@@ -37,7 +37,7 @@ app.get('/tasks', (req, res) => {
     const taskIndex = tasks.findIndex((task) => task.id === Number(id));
   
     if (taskIndex === -1) {
-      return res.status(404).send({ error: 'Task not found.' });
+      return res.status(404).send({ error: 'Tarefa não encontrada.' });
     }
   
     const { title, description, dueDate, completed } = req.body;
@@ -58,12 +58,12 @@ app.get('/tasks', (req, res) => {
     const taskIndex = tasks.findIndex((task) => task.id === Number(id));
   
     if (taskIndex === -1) {
-      return res.status(404).send({ error: 'Task not found.' });
+      return res.status(404).send({ error: 'Tarefa não encontrada.' });
     }
   
     tasks.splice(taskIndex, 1);
   
-    res.send({ message: 'Task deleted successfully.' });
+    res.send({ message: 'Tarefa excluída com sucesso.' });
   });
 
   // Validação de dados
