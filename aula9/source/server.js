@@ -79,41 +79,41 @@ app.get('/products', (req, res) => {
   /*
   Comentando cada linha desse código para gravar o video da prova:
 
-1.const express = require('express');                    Aqui, estamos importando o módulo `express`, que é um 
+1.const express = require('express');                    Aqui, estou importando o módulo `express`, que é um 
 framework para construir aplicativos web em Node.js.
 
-2.const app = express();                                 Criamos uma instância do aplicativo Express chamada `app`.
+2.const app = express();                                 Criei uma instância do aplicativo Express chamada `app`.
 
-3.const PORT = 8000;                                     Definimos a porta em que o servidor irá escutar (neste caso, a porta 8000).
+3.const PORT = 8000;                                     Defini a porta em que o servidor irá escutar (neste caso, a porta 8000).
 
-4.app.use(express.json());                               Configuramos o aplicativo para usar o middleware `express.json()`, 
+4.app.use(express.json());                               Configurei o aplicativo para usar o middleware `express.json()`, 
 que analisa o corpo das requisições como JSON.
 
-5.app.get('/', (req, res) => { ... });                   Definimos uma rota para a URL raiz ("/"). Quando alguém 
+5.app.get('/', (req, res) => { ... });                   Defini uma rota para a URL raiz ("/"). Quando alguém 
 acessa essa rota via método GET, o servidor responde com a mensagem "Bem-vindo ao servidor CRUD!".
 
-6.app.listen(PORT, () => { ... });                      Iniciamos o servidor Express para escutar na porta especificada. Quando o servidor está ativo, ele exibe uma mensagem no console.
+6.app.listen(PORT, () => { ... });                      Iniciar o servidor Express para escutar na porta especificada. Quando o servidor está ativo, ele exibe uma mensagem no console.
 
-7.let products = [];                                    Criamos uma variável chamada `products` para armazenar os produtos.
+7.let products = [];                                    Criei uma variável chamada `products` para armazenar os produtos.
 
-8.app.post('/products', (req, res) => { ... });         Definimos uma rota para criar um novo produto.
+8.app.post('/products', (req, res) => { ... });         Defini uma rota para criar um novo produto.
  Quando alguém envia uma requisição POST para "/products", o servidor verifica os dados enviados 
  (nome, preço e descrição). Se os dados forem válidos, o produto é criado e retornado como resposta.
 
- 9.app.get('/products', (req, res) => { ... });         Definimos uma rota para obter a lista de produtos.
+ 9.app.get('/products', (req, res) => { ... });         Defini uma rota para obter a lista de produtos.
  Quando alguém acessa "/products" via método GET, o servidor retorna a lista de produtos.
 
- 10.app.put('/products/:id', (req, res) => { ... });    Definimos uma rota para atualizar um produto
+ 10.app.put('/products/:id', (req, res) => { ... });    Defini uma rota para atualizar um produto
  existente. O ID do produto é passado como parâmetro na URL. Se o produto com o ID fornecido existir, 
  ele é atualizado com os novos dados.
 
- 11.app.delete('/products/:id', (req, res) => { ... });   Definimos uma rota para excluir um produto. O ID do produto é passado como parâmetro na URL. Se o produto com o ID fornecido existir, ele é removido da lista.
+ 11.app.delete('/products/:id', (req, res) => { ... });   Defini uma rota para excluir um produto. O ID do produto é passado como parâmetro na URL. Se o produto com o ID fornecido existir, ele é removido da lista.
 
- 12.Existem comentários explicativos adicionais no código, como instruções para testar
+ 12.Existe comentários explicativos do prof. adicionais no código, como instruções para testar
  as rotas usando o Postman e um comentário incompleto sobre middlewares.
 
 
- Lembrar de testar essas rotas usando o Postman, enviando as requisições para o endereço
+ Lembrete: Testar essas rotas usando o Postman, enviando as requisições para o endereço
  `http://localhost:8000` com os métodos HTTP corretos (POST, GET, PUT, DELETE).
 
   */
